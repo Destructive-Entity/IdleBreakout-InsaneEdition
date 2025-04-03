@@ -69,4 +69,4 @@ This game version was **100% coded by [Destructive-Entity](https://github.com/De
 ## License
 
 *(Optional: Consider adding a license, like MIT. If you do, add license details here. Example:)*
-Distributed under the MIT License. See (LICENSE)[LICENSE] file for more information.
+Distributed under the MIT License. See [LICENSE](LICENSE) file for more information.
