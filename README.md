@@ -1,5 +1,7 @@
 # Idle Breakout - INSANE Edition
 
+**PLAY  [HERE](https://destructive-entity.github.io/IdleBreakout-InsaneEdition/)**
+
 ![Gameplay Screenshot](![image](https://github.com/user-attachments/assets/fc9d5a39-b781-4cbc-bd7b-95173cfc1962)
 *<(--- **IMPORTANT:** Replace `placeholder.png` with a link to an actual screenshot or GIF of your game! Upload the image to your repo or use an image hosting service.)*>
 
