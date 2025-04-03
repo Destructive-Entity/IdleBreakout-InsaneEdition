@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Breakout INSANE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <h1>Idle Breakout <span class="insane-title">INSANE!</span></h1>
+
+        <div id="game-container">
+            <canvas id="gameCanvas"></canvas>
+
+            <div id="info-panel">
+                <!-- Stage & Stats Section -->
+                <div class="panel-section stats-section">
+                    <h2>Stage: <span id="stage-display">1</span> | Stats</h2>
+                    <p>Score: <span id="score">0</span></p>
+                    <hr class="thin-hr">
+                    <p>Balls: <span id="ball-count">1</span></p>
+                    <p>Ball Speed: <span id="ball-speed">1.00</span>x</p>
+                    <p>Ball Damage: <span id="ball-damage">1</span></p>
+                    <p>Crit Chance: <span id="crit-chance">0</span>%</p>
+                    <p>Crit Damage: <span id="crit-multiplier">150</span>%</p>
+                    <hr class="thin-hr">
+                    <p>Click Value: <span id="click-value">1</span></p>
+                    <p>Auto Clicks/s: <span id="auto-clicks-per-sec">0.0</span></p>
+                    <hr class="thin-hr">
+                    <p>Score Bonus: <span id="score-multiplier">1.0</span>x</p>
+                    <p>Powerup Chance: <span id="powerup-chance">2</span>%</p>
+                    <p>Powerup Duration: <span id="powerup-duration">5.0</span>s</p>
+                </div>
+
+                <!-- Active Powerups -->
+                <div class="panel-section active-powerups-section">
+                    <h2>Active Powerups</h2>
+                    <div id="active-powerups-list">
+                        <!-- Powerup indicators will appear here -->
+                        <span class="no-powerups">None Active</span>
+                    </div>
+                </div>
+
+                <!-- Upgrades Section -->
+                <div class="panel-section upgrades-section">
+                    <h2>Upgrades</h2>
+                    <div class="upgrades-grid">
+                        <!-- Ball Upgrades -->
+                        <button id="upgrade_addBall">Add Ball <span class="cost">(<span id="cost_addBall">50</span>)</span></button>
+                        <button id="upgrade_ballSpeed">Ball Speed <span class="cost">(<span id="cost_ballSpeed">100</span>)</span></button>
+                        <button id="upgrade_ballDamage">Ball Damage <span class="cost">(<span id="cost_ballDamage">75</span>)</span></button>
+                        <button id="upgrade_critChance">Crit Chance <span class="cost">(<span id="cost_critChance">300</span>)</span></button>
+                        <button id="upgrade_critMultiplier">Crit Damage <span class="cost">(<span id="cost_critMultiplier">500</span>)</span></button>
+                        <!-- Click/Auto Upgrades -->
+                        <button id="upgrade_clickValue">Click Value <span class="cost">(<span id="cost_clickValue">25</span>)</span></button>
+                        <button id="upgrade_autoClicker">Auto Clicker <span class="cost">(<span id="cost_autoClicker">1000</span>)</span></button>
+                        <!-- General/Powerup Upgrades -->
+                        <button id="upgrade_scoreMultiplier">Score Bonus <span class="cost">(<span id="cost_scoreMultiplier">200</span>)</span></button>
+                        <button id="upgrade_powerupChance">Powerup Chance <span class="cost">(<span id="cost_powerupChance">400</span>)</span></button>
+                        <button id="upgrade_powerupDuration">Powerup Duration <span class="cost">(<span id="cost_powerupDuration">600</span>)</span></button>
+                    </div>
+                </div>
+
+                <!-- Save/Load Section -->
+                <div class="panel-section save-load-section">
+                    <h2>Save / Load</h2>
+                    <textarea id="saveCodeInput" rows="3" placeholder="Paste save code here... V3 Saves Only!"></textarea>
+                    <div class="save-load-buttons">
+                        <button id="saveBtn" class="sl-button">Save Game</button>
+                        <button id="loadBtn" class="sl-button">Load Game</button>
+                    </div>
+                    <p id="saveLoadStatus" class="status-message"></p>
+                </div>
+            </div>
+        </div>
+
+        <p class="attribution">
+            100% made by <a href="https://github.com/Destructive-Entity" target="_blank" rel="noopener noreferrer">Destructive-Entity</a>
+        </p>
+    </div>
+
+    <!-- ===== Intro Popup Modal ===== -->
+    <div id="popupOverlay"></div>
+    <div id="introPopup">
+        <h2>Welcome to Idle Breakout <span class="insane-title">INSANE!</span></h2>
+        <p>Get ready for an enhanced breakout experience with a unique idle twist!</p>
+        <div class="feature-list">
+            <div class="feature-item">
+                <span class="feature-icon">🔄</span>
+                <p>Balls automatically bounce and break bricks</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">👆</span>
+                <p>Click bricks for bonus score!</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">⚡</span>
+                <p>Buy upgrades to increase balls, speed, damage, and more</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🎁</span>
+                <p>Break bricks for a chance to drop temporary Powerups!</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🏆</span>
+                <p>Progress through stages with tougher bricks</p>
+            </div>
+        </div>
+        <p class="popup-attribution">
+            Game concept inspired by original Idle Breakout.<br>
+            This version 100% coded by <a href="https://github.com/Destructive-Entity" target="_blank" rel="noopener noreferrer">Destructive-Entity</a>
+        </p>
+        <button id="closePopupBtn">Let's Break Stuff! 🧱</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
