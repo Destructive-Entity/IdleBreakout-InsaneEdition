@@ -2,7 +2,7 @@
 
 **PLAY  [HERE](https://destructive-entity.github.io/IdleBreakout-InsaneEdition/)**
 
-![Gameplay Screenshot](![image](https://github.com/user-attachments/assets/fc9d5a39-b781-4cbc-bd7b-95173cfc1962)
+(https://github.com/user-attachments/assets/fc9d5a39-b781-4cbc-bd7b-95173cfc1962)
 *<(--- **IMPORTANT:** Replace `placeholder.png` with a link to an actual screenshot or GIF of your game! Upload the image to your repo or use an image hosting service.)*>
 
 An enhanced and feature-packed clone of the classic Idle Breakout game, built entirely with HTML5 Canvas, CSS3, and vanilla JavaScript. This version adds numerous upgrades, powerups, stages, and quality-of-life features for a more **INSANE** experience!
